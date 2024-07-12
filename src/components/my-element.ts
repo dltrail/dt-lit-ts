@@ -11,10 +11,10 @@ import { customElement, property } from 'lit/decorators.js'
 export class MyElement extends LitElement {
   /**
    * Copy for the read the docs hint.
-   */
-  @property()
-  docsHint = 'Click on the Vite and Lit logos to learn more'
-
+   *
+  * @property()
+  * docsHint = 'Click on the Vite and Lit logos to learn more'
+**/
   /**
    * The number of times the button has been clicked.
    */
@@ -24,7 +24,7 @@ export class MyElement extends LitElement {
   render() {
     return html`
       <div>
-    
+        Test LitElement
       </div>
       <slot></slot>
       <div class="card">
@@ -32,7 +32,6 @@ export class MyElement extends LitElement {
           count is ${this.count}
         </button>
       </div>
-      <p class="read-the-docs">${this.docsHint}</p>
     `
   }
 
