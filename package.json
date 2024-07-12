@@ -2,10 +2,20 @@
   "name": "@dltrail/dt-lit-ts",
   "version": "1.2.0",
   "type": "module",
+  "description": "This is a simple npm package of lit components using typescript.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "D L Trail",
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
-    "build": "tsup",
-    "preview": "vite preview"
+    "build": "NODE_ENV=production tsup",
+    "preview": "vite preview",
+    "start": "web-dev-server --node-resolve --open --watch"
   },
   "repository": {
     "type": "git",
@@ -18,14 +28,5 @@
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
-  },
-  "description": "This is a simple npm package of lit components using typescript.",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "author": "D L Trail",
-  "license": "ISC"
+  }
 }
