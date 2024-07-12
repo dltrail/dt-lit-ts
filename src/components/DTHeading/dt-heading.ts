@@ -21,10 +21,11 @@ export class DTHeading extends LitElement {
       text-align: center;
     }
 
-    .h1 {
+    h1 {
       font-size: 32px;
       letter-spacing: 2px;
-      font-weight: bold
+      font-weight: bold;
+      text-transform: uppercase
     }
   `
 }

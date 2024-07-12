@@ -15,7 +15,9 @@
     "dev": "vite",
     "build": "NODE_ENV=production tsup",
     "preview": "vite preview",
-    "start": "web-dev-server --node-resolve --open --watch"
+    "start": "web-dev-server --node-resolve --open --watch",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -26,7 +28,16 @@
     "tsup": "^8.1.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.2",
+    "@storybook/addon-interactions": "^8.2.2",
+    "@storybook/addon-links": "^8.2.2",
+    "@storybook/blocks": "^8.2.2",
+    "@storybook/html": "^8.2.2",
+    "@storybook/html-vite": "^8.2.2",
+    "@storybook/test": "^8.2.2",
     "@web/dev-server": "^0.4.6",
+    "storybook": "^8.2.2",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   }
