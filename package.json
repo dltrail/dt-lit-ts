@@ -26,6 +26,7 @@
     "tsup": "^8.1.0"
   },
   "devDependencies": {
+    "@web/dev-server": "^0.4.6",
     "typescript": "^5.2.2",
     "vite": "^5.3.1"
   }
