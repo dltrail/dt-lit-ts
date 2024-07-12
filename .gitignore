@@ -26,3 +26,4 @@ dist-ssr
 .env.local
 
 *storybook.log
+package-lock.json
