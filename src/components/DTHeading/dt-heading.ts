@@ -1,4 +1,4 @@
-import { LitElement, css, html } from 'lit'
+import { LitElement, css, html, } from 'lit'
 import { customElement, property } from 'lit/decorators.js'
 
 @customElement('dt-heading')
@@ -8,8 +8,9 @@ export class DTHeading extends LitElement {
 
   render() {
     return html`
-      <h1 class="read-the-docs">${this.headingText}</h1>
-      <slot></slot>
+      <h1 class="heading-inner">
+        <slot name="heading">${this.headingText}</slot>
+      </h1>
     `
   }
 
@@ -35,3 +36,11 @@ declare global {
     'dt-heading': DTHeading
   }
 }
+
+// Using a specific element wrapper
+// <h1 class="heading-inner">${this.headingText}</h1>
+
+// Using a slot within an element wrapper
+// <h1 class="heading-inner">
+//   <slot name="heading">${this.headingText}</slot>
+// </h1>
