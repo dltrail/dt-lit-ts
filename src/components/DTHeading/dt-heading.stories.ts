@@ -1,7 +1,17 @@
 import './dt-heading'
+import { Meta, StoryObj } from '@storybook/web-components';
 
-export default {
+interface DtHeadingArgs {
+  headingText?: string;
+}
+
+const meta:Meta<DtHeadingArgs> ={
   title: 'Example/MyComponent',
+  component: 'dt-heading',
+    parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
   argTypes: {
     headingText: {
       control: {
@@ -9,19 +19,12 @@ export default {
       },
     },
   },
-};
+}
 
+export default meta;
 
-const Template = (args: any) => {
-  const el = document.createElement('dt-heading');
-  Object.keys(args).forEach((key) => {
-    el[key] = args[key];
-  });
-  return el;
-};
-
-export const Default = Template.bind({});
-Default.args = {
-  // Default web components properties go here
-  headingText: 'testing'
+export const CustomHeading: StoryObj = {
+  args: {
+    headingText: 'Built with Storybook',
+  },
 };
