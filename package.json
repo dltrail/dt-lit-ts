@@ -13,7 +13,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "vite",
-    "build": "NODE_ENV=production tsup",
+    "build": "tsup",
     "preview": "vite preview",
     "start": "web-dev-server --node-resolve --open --watch",
     "storybook": "storybook dev -p 6006",
