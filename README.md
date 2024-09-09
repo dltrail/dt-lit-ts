@@ -1,6 +1,6 @@
 # Lit-ts NPM Package
 
-This is a simple npm package of lit components using typescript.
+Playing around with lit web components.
 
 ## Installation
 
